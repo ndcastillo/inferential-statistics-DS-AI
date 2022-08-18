@@ -708,7 +708,7 @@ Nos ayudaremos para realizar el cálculo de estos limites con la tabla Z, usando
 
 De esta manera el numero con su primer decimal sera 1.9, mientras que el segundo decimal a seleccionar sera 0.06, de manera que el limite máximo sera $Z_{\alpha /2}= 1.96$, como estamos tratanto de una distribución normal, entonces es simetría respecto a una media cero, por cuanto $-Z_{\alpha /2}=-1.96$. Así nuestro Intervalo de confianza estará definido por:
 
-$IC_{95\%}=(-1.96 ; 1.96)$
+$IC_{95}=(-1.96 ; 1.96)$
 
 ![](img\2022-08-17-11-19-07-image.png)
 
@@ -742,7 +742,7 @@ $x_2=(4)(1.28)+28=33.12$
 
 Con estos valores hemos encontrado los valores de mínimo y máximo de nuestro intervalo de confianza:
 
-$IC_{80\%}=(22.88 ; 33.12)$
+$IC_{80}=(22.88 ; 33.12)$
 
 La interpretación de este intervalo dirá que la duración mínima de un cepillo sera de 22.88 días, y la duración máxima sera del 33.12 días, esto con un nivel de confianza del 80%.
 
@@ -809,13 +809,12 @@ Como usaremos valores mayores a 50, entonces usaremos `st.norm.interval` en dond
 - `scale = st.sem(tabla)`: Error estándar de la media $SE = \frac{\sigma}{\sqrt{n}}$, esto nos indica que el error de muestreo disminuye cuando crece el numero de muestras.
 
 ```python
-# 95
 st.norm.interval(alpha = 0.95, loc = np.mean(tabla), scale = st.sem(tabla))
 ```
 
-$IC_{95\%}(6.85 ; 8.22) \ | \ Símbolos \ Transmitidos$
+$IC_{95}(6.85 ; 8.22) \ | \ Símbolos \ Transmitidos$
 
-$IC_{95\%}(7.14 ; 8.57) \ | \ Símbolos + Ruido$
+$IC_{95}(7.14 ; 8.57) \ | \ Símbolos + Ruido$
 
 Esto nos menciona los valores mínimo y máximo de voltaje que pueden tener los símbolos transmitidos y al pasar por un canal de característica gaussiana.
 
@@ -824,23 +823,21 @@ Esto nos menciona los valores mínimo y máximo de voltaje que pueden tener los 
 ### Para un indice de confianza del $(1-\alpha)=68\%$
 
 ```python
-#68
 st.norm.interval(alpha = 0.68, loc = np.mean(tabla), scale=st.sem(tabla))
 ```
 
-$IC_{68\%}(6.85 ; 8.22) \ | \ Símbolos \ Transmitidos$
+$IC_{68}(6.85 ; 8.22) \ | \ Símbolos \ Transmitidos$
 
-$IC_{68\%}(7.14 ; 8.57) \ | \ Símbolos + Ruido$
+$IC_{68}(7.14 ; 8.57) \ | \ Símbolos + Ruido$
 
 ### Para un índice de confianza del $(1-\alpha)=99.7\%$
 
 ```python
-#99.7
 st.norm.interval(alpha = 0.997, loc = np.mean(tabla), scale=st.sem(tabla))
 ```
 
-$IC_{99.7\%}(5.49 ; 9.58) \ | \ Símbolos \ Transmitidos$
+$IC_{99.7}(5.49 ; 9.58) \ | \ Símbolos \ Transmitidos$
 
-$IC_{99.7\%}(5.73 ; 9.98) \ | \ Símbolos + Ruido$
+$IC_{99.7}(5.73 ; 9.98) \ | \ Símbolos + Ruido$
 
 **Contribución realizada por:** David Castillo
