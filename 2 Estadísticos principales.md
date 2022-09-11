@@ -120,11 +120,7 @@ Este medirá el nivel de ocurrencia de un evento determinado. Por ejemplo la pro
 
 Dado un evento ocurrido, la probabilidad condicional nos modela la probabilidad de que otro evento suceda consecutivamente. Es decir dado un evento B, la probabilidad de que ocurra el evento A sera de:
 
-
-
 $P(A/B)=\frac{P(A∩B)}{P(B)}$
-
-
 
 <img title="" src="img/2022-08-01-12-37-07-image.png" alt="" width="207" data-align="center">
 

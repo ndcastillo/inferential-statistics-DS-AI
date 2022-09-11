@@ -9,6 +9,7 @@ Los tipos de pruebas de hipótesis son:
 - Coeficiente de Pearson
 
 ## t de Student
+
 Tambien conocida como distribución t, es **utilizada para aproximar el valor de la media** de una **muestra pequeña**, es decir que no tiene muchos elementos, ademas que se **desconoce la desviación típica**. Esta distribución seguira la forma de una distribución normal y la variable a evaluar sera:
 
 $$
@@ -57,6 +58,7 @@ Con esto en mente podemos armar una tabla con estas especificaciones.
 | r=-1        | Perfecta             | Indirecta           |
 
 ## Análisis de la Varianza (ANOVA)
+
 Se utiliza para realizar la comparación de variables entre las medias de diferentes grupos, es decir **la comparación de diferentes ditribuciones** obtenidas de distintas muestras.
 
 ![ANOVA](img/anova.png)
