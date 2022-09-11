@@ -3,6 +3,7 @@ Este repositorio contiene notas propias del **Curso de EstadísticaInferencial p
 ![Data Science](https://media.tenor.com/i1rNMdaKd7MAAAAC/gaussian-mixture-models-em-method-math.gif)
 
 ## Articulos Creados
+Ruta Relativa `./articles`
 
 - 10 Intervalos de Confianza.md
 - 11 Cálculo de intervalo de confianza.md
@@ -35,6 +36,9 @@ git clone https://github.com/ndcastillo/inferential-statistics-DS-AI.git
 ```
 wget https://github.com/ndcastillo/inferential-statistics-DS-AI.git
 ```
+
+## Cuadernos de Python
+Ruta Relativa: `./books-python`
 
 - Bootstraping_en_Python.ipynb
 - Funciones_de_Muestreo.ipynb
